@@ -23,28 +23,29 @@ html,body {
     
   
 body{
-      background-color: hsl(0, 0%, 98%);
+      background-color: hsl(0, 4%, 5%);
       font-family: 'raleway';
  }
 .text-center{
-    color: black;
+    color: white;
 }
+.dim{
+    background-color: rgb(0, 0, 137);
+}p
  
     
 
-form {
-    width: 60%;
-    margin: 0 auto;
-    color: whitesmoke;
-    font-size: large;
+
+.myform{
+    background-color: black;
 }
 
 .navbar {
-    background-color: cadetblue;
+    background-color: black;
 }
 .timeline{
     display: block;
-    background-color: white;
+    background-color: black;
 }
 
 .navbar li a {
@@ -69,14 +70,14 @@ form {
 }
 .nav-link:hover{
     font-size: medium;
-    background-color: antiquewhite;
+    background-color: rgb(20, 43, 94);
     
 }
 .jumbotron{
     background-color: black;
 }
 .jumbotron.h1{
-    background-color: white;
+    background-color: black;
 }
 
 @media(max-width: 767px){
@@ -95,7 +96,10 @@ body{
     display: grid;
     place-items:center;
 }
-.container{
+.timeline-heading{
+    background-color: black;
+}
+.container2{
     width:80vw;
     height:80vh;
     display:flex;
@@ -112,54 +116,57 @@ body{
     color: var(--textcolor);
 }
 .products{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+   background-color:black ;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 20px;
 }
+
 .product{
-    position: relative;
-    background: var(--sectionBack);
-    width: 350px;
-    height: 100%;
-    box-shadow: 0 5px 20px rgba(0,0,0, .3);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 25px 25px 50px;
-    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 20px 4px white;
+    margin: 0 10px;
     transition: .3s;
 }
 .product:hover{
     transform:translateY(-15px);
-    box-shadow:0 5px 10px rgba(0,0,0, .2);
+    box-shadow:0 5px 10px white;
+}
+.product-content{
+    padding-right: 0;
+    margin: 0;
+    color: white;
+}
+.product,image{
+    width: 100%;
+    height: 100%;
 }
 .image{
-    width:100%;
-    height: 60%;
-    display: grid;
-    place-items: center;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    place-items: left ;
 }
-.image img{
-    width:240px;
-}
+
 .namePrice{
     width:100%;
     display: flex;
     justify-content: space-between;
 }
-    .namePrice h3{
+    .namePrice h4{
     font-size:2em;
     text-transform:capitalize;
-    color: var(--textColor);
+    color: white;
 }
 .namePrice span{
     font-size:1.5em;
-    color: var(--starColor);
+    color: white;
 }
 .product p{
+    box-sizing: border-box;
     font-size: 18px;
     line-height:25px;
 }
@@ -169,14 +176,14 @@ body{
 }
 .buy{
     position:absolute;
-    bottom:10px;
-    right:10px;
+    bottom:20px;
+    right:30px;
 }
 .buy button{
-    padding:10px 20px;
+    padding:5px 5px;
     border-radius:7px;
     border: none;
-    background-color: coral;
+    
     color: black;
     font-size:18px;
     text-transform: capitalize;
@@ -186,4 +193,9 @@ body{
 .buy button:hover{
     transform:scale(1.1);
     }
+
+.row{
+    text-decoration: none;
+    text-align: center;
+}
     

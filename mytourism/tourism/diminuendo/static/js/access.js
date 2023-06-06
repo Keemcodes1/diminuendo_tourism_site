@@ -25,3 +25,36 @@ demoQuery.style.border = '1px solid red';
 demoQueryAll.forEach(query => {
   query.style.border = '1px solid green';
 });
+document.getElementById("myForm").addEventListener("submit",function(event){
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var cpassword = document.getElementById("cpassword").value;
+  var telephone = document.getElementById("telephone").value;
+  //validation checks
+  if(name ===""){
+      alert("please enter your name.");
+      event.preventDefault();//to prevent form submission to default
+      return;
+  }
+  if(email ===""){
+      alert("please enter your email.");
+      event.preventDefault();//to prevent form submission to default
+      return;
+  }
+  if(password ===""){
+      alert("please enter your password.");
+      event.preventDefault();//to prevent form submission to default
+      return;
+  }
+  if(cpassword !=="password"){
+      alert("please enter the correct password.");
+      event.preventDefault();//to prevent form submission to default
+      return;
+  }
+  if(telephone ===""){
+      alert("please enter your telephone number.");
+      event.preventDefault();//to prevent form submission to default
+      return;
+  }
+})

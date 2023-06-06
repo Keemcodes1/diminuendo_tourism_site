@@ -1,0 +1,44 @@
+
+{% load static%}
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% block title%}
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        
+    </head>
+  <body bgcolor= coral 
+  >{% endblock%}
+    {% block content%}
+    {% csrf_token %}
+        <div class="bg-danger">
+            <h1 class="heading">
+            CONTACT FORM
+            </h1>
+            
+            <form id="myForm" action="" method="post">
+               Name: <input type="text" id="name" name="Name" placeholder="write your name" required><br><br><br>
+               Email Address: <input type="text" id="email" name="Email Address" placeholder="write ur email" required><br><br><br>
+                Telephone:<input type="number" id="telephone" name="Telephone" placeholder="phone number" required><br><br><br>
+                <h5>GENDER</h5>
+                male:<input type="radio" name="gender"   value="male"> <br>
+                female:<input type="radio" name="gender" value="female"><br>
+                other:<input type="radio" name="gender"    value="other" checked><br><br>
+                  PACKAGES<select name="period of stay">
+                        <option value="7days">7days</option>
+                        <option value="3days">3days</option>
+                        <option value="4day">4days</option>
+                        <option value="4day">2days</option>
+                        <option value="other">other..please specify in the comment box</option>
+                    </select><br><br><br>
+                   Comments: <textarea name="Comments" placeholder="Leave us a comment or feedback"></textarea><br><br>
+                    <div class="button">
+                        <button type="submit" name="send">send</button>
+                        <button type="submit" name="Reset">Reset</button>
+                   </div> 
+            </form>
+        </div>    
+    {% endblock%}    
+  </body>
+</html>

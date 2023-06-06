@@ -1,294 +1,95 @@
-{% extends 'base.html'%} {% block content%}
-<br></br>
-<title> responsive product card</title>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIMINUENDO</title>
+<link href="/static/css/text.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body> 
 <div class="container">
-  <div class="header">
-      <h1>SCENERY</h1>
-     </div>
-<div class="products">
-  <div class="product">
-      <div class="image">
-          <img src="/static/images/baboon.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h4>forest sceneries</h4>
-           <span>$ 15.99</span>
-       </div><br><br>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.dgdggdghhhhh<br>ghsfggsjkghsfgsfgfgsfgfgsf</p>
-         <div class="buy">
-        
-            <input
-              type="submit"
-              value="book now"
-              class="btn btn-secondary btn"
-              type="button"
-            />
-          </a>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="/static/images/crane.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>MacBook Air</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
+  <header>
+    <div class="primary_header">
+      <h1 class="title"> DIMINUENDO ADVENTURES AND SAFARIS&nbsp;</h1>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <ul>
+         <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">HOME</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio' %}">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'services' %}">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'bookings'%}">BOOKINGS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contactus'%}">CONTACT US</a>
+              </li>
+              
+              
+              
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">ADVENTURES AND SAFARIS</h2>
+    <article class="left_article">
+      <h3>DIMINUENDO</h3>
+      <p>Diminuendo adventures and safaris is a full destination management company committed to making your African holiday dreams a reality</p>
+      <p> The company has become a premier provider of adventure-filled tours and travel services in the region.
+      The company offers a wide range of safaris including wild safaris,birding safaris,adventure trips,hiking,camping and air transport pickups
+      Its a team of dedicated experienced professionals ready to provide high quality service and unforgettable experience to all of its clients
+      . Whether you are looking to spot the Big Five on a wild safari,catch a glimpse of rare bird species on a abd safaris or embark on a thrilling adventure
+      trip. Diminuendo classic tours has something for you, the company will ensure that you have safe and enjoyable experience, no matter what type of tour you choose
+      With its top-notch services and commitment to customer satisfaction, you're sure to have an unforgettable experience.  </p>
+    </article>
+    <aside class="right_article"><img src="/static/images/logo.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
+  </section>
+  
+  <div class="row">
+    <div class="columns">
+     
+      <h4>3 Days Murhison falls safari Uganda</h4>
+      <p>If you want to take your eyes, mind body and soul on a thrilling adventure. Diminuendo has got you covered.
+       Its a 2 nights/3 day Murchison falls national park in Uganda Wildlife trip .</p>
+    </div>
+    <div class="columns">
+     
+      <h4>3 Days Queen Elizabeth safari-
+      wild life safari in Uganda</h4>
+      <p>Our 3 day Queen Elizabeth safari is an amazing 2 nights/3 day tour offers you a site of the big five wild game
+      during game drives,superb bird watching & cultural adventure.</p>
+    </div>
+    <div class="columns">
       
-              <button>book now</button>
+      <h4>4 Days Tour-Gorrila Trekking Bwindi & Wild life viewing </h4>
+      <p>The tour is a 3 nights/4 day Uganda tour featuring Uganda wild life game drives in Queen Elizabeth Ntional park
+        and Gorrila trekking in Uganda's Bwindi impenetrable National Park.</p>
+    </div>
+    <div class="columns">
+     
+      <h4>12 Days Uganda safari-Gorrila Trekking,Chimpanze Tracking,Wildlife
+      viewing Uganda safari Trip</h4>
+      <p>This tour is a carefully crafted 11 nights 12 days safari Uganda trip featuring Gorilla trekking in Uganda Bwindi 
+      impenetrable National park,Chimpanze tracking in Uganda kibale National Park amd game viewing in murchison falls, Queen
+      Elizabeth and Lake Mburo .</p>
+    </div>
   </div>
 
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2023 - <strong> ALL RIGHTS RESERVED DIMINUENDO</strong></div>
+  </footer>
 </div>
-<div class="product">
-      <div class="image">
-          <img src="static/images/IMG6.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>DEll Latitude</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="/static/images/IMG3.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="/static/images/IMG2.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="/static/images/clients.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="static/images/sun.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="images/sun.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="images/ab.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="images/ab.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="images/ab.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="images/ab.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-<div class="product">
-      <div class="image">
-          <img src="images/ab.jpg" alt="">
-      </div>
-      <div class="namePrice">
-          <h3>earphone</h3>
-           <span>$ 15.99</span>
-       </div>
-       <p>lorem ipsum dolor sit amet consectuer adipiscing.</p>
-         <div class="stars">
-             <i class="fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-             <i class= "fa-solid fa-star"></i>
-         </div>
-         <div class="buy">
-      
-              <button>book now</button>
-  </div>
-
-</div>
-{% endblock%}
+</body>
+</html>

@@ -2,14 +2,23 @@
 {% extends 'base.html' %}
 
 {% block title %}
+<div class="dim">
   Welcome to the Most Awesome Tourism Site Ever
+</div>  
 {% endblock %}
 
 {% block content %}
   <div class="jumbotron">
     <h1>Welcome to Diminuendo</h1>
-    <p>We're your one-stop shop. you're looking for the latest tech gadgets, unique gifts and accessories, or just something fun to add to your collection, we've got you covered.</p>
-    <p>Start shopping now and see what all the fuss is about!</p>
-    <a href="{% url 'login' %}" class="btn btn-primary btn-lg" role="button">Shop Now</a>
+    <p>Diminuendo adventures and safaris is a full destination management company committed to making your African holiday dreams a reality</p>
+      <p> The company has become a premier provider of adventure-filled tours and travel services in the region.
+      The company offers a wide range of safaris including wild safaris,birding safaris,adventure trips,hiking,camping and air transport pickups
+      Its a team of dedicated experienced professionals ready to provide high quality service and unforgettable experience to all of its clients
+      . Whether you are looking to spot the Big Five on a wild safari,catch a glimpse of rare bird species on a abd safaris or embark on a thrilling adventure
+      trip. Diminuendo classic tours has something for you, the company will ensure that you have safe and enjoyable experience, no matter what type of tour you choose
+      With its top-notch services and commitment to customer satisfaction, you're sure to have an unforgettable experience.  </p>
+    
+    <img src="/static/images/logo.jpg" width="500", height="360">
+    <a href="{% url 'bookings' %}" class="btn btn-danger btn-lg" role="button">Visit Us</a>
     </div>
 {% endblock %}
